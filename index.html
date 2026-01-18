@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation & Language Switcher -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-i18n="nav_home">Bosh sahifa</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">Malumot</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Aloqa</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="uz">UZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">РУ</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_greeting">Assalom alaikum!</h1>
+                <p class="hero-subtitle" data-i18n="hero_intro">Men raqamli dizayner va web ishlashiga ishtiyoq qilaman</p>
+                <p class="hero-description" data-i18n="hero_description">Estetik va funksional veb-saytlar yaratish orqali brend imijini oshirish meningning ehtirosi.</p>
+                <a href="#contact" class="cta-button" data-i18n="cta_contact">Aloqa qilish</a>
+            </div>
+            <div class="hero-image">
+                <img src="" alt="Portfolio photo" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title" data-i18n="about_title">Meni tanishing</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph" data-i18n="about_p1">
+                        Men zamonaviy veb-dizayn va foydalanuvchi tajribasiga ihtisoslashmishman. Har bir loyihada, men sifat, estetika va qo'llanuvchi istiqboli to'g'ri muvozanatni ta'minlaymiz.
+                    </p>
+                    <p class="about-paragraph" data-i18n="about_p2">
+                        Mening ishim shaxsiy brend, startuplar va bizneslarni raqamli dunyoda o'zlarini namoyish qilishga yordam beradi. Qo'llanuvchi-markaziy yondashuvni yordamida men har bir sahifani maqsadli va taassurot qoldiruvchi qilaman.
+                    </p>
+                    <p class="about-paragraph" data-i18n="about_p3">
+                        Shuningdek, men dizayn va kodlash o'rtasidagi chuqur aloqalarni tushunaman, bu menga mustahkam va ham yaxshi ko'rinadigan veb-saytlar yaratish imkonini beradi.
+                    </p>
+                </div>
+                <div class="skills-section">
+                    <h3 class="skills-title" data-i18n="skills_title">Malakalar</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <span class="skill-name">UI/UX Dizayn</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-name">Web Dizayn</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-name">Responsive Dizayn</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-name">Brending</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-name">Prototyping</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-name">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title" data-i18n="contact_title">Menga yozing</h2>
+            <p class="contact-subtitle" data-i18n="contact_subtitle">Loyiha bo'yicha muloqot qilmoqchimiz? Menga o'z sharhingizni yuboring!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Ismingiz" class="form-input" required data-i18n-placeholder="form_name">
+                    <span class="form-error" data-i18n="form_error_name">Iltimos ismingizni kiriting</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" class="form-input" required data-i18n-placeholder="form_email">
+                    <span class="form-error" data-i18n="form_error_email">Iltimos to'g'ri emailni kiriting</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Mavzu" class="form-input" required data-i18n-placeholder="form_subject">
+                    <span class="form-error" data-i18n="form_error_subject">Iltimos mavzuni kiriting</span>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Xabaringiz" class="form-textarea" required data-i18n-placeholder="form_message"></textarea>
+                    <span class="form-error" data-i18n="form_error_message">Iltimos xabar kiriting</span>
+                </div>
+                <button type="submit" class="submit-btn" data-i18n="form_submit">Jo'natish</button>
+            </form>
+
+            <div class="contact-info">
+                <h3 class="contact-info-title" data-i18n="contact_connect">Meni ijtimoiy tarmoqlarda toping</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="mailto:hello@example.com" class="social-link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text" data-i18n="footer_text">© 2024 Mening Portfolio. Barcha huquqlar saqlanib qoladi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
